@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(90, 89, 89);
+}
+.root {
+    width: 400px;
+    height: 400px;
+    /* background-color: #ccc; */
+    margin: 0 auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+.root div {
+    background-color: rgb(116, 109, 109);
+    border: solid 1px rgba(0, 0, 0, .6);
+    border-radius: 5px;
+    cursor: pointer;
+}
