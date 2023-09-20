@@ -1,0 +1,33 @@
+/* #figure {
+	border: solid 1px black;
+	display: block;
+	margin-bottom: 10px;
+} */
+
+
+/* ==================================== */
+/* #figure{
+	border: solid 1px lightblue;
+} */
+
+/* ====================================== */
+/* #figure{
+	border: solid 1px black;
+	display: block;
+	margin: 0 auto;
+} */
+
+/* ============================================================== */
+table {
+	float: left;
+	margin-right: 20px;
+}
+#figure {
+	border: solid;
+}
+table tr td:nth-child(even), table tr th:nth-child(even){
+	width: 50px;
+}
+input {
+	width: 45px;
+}
