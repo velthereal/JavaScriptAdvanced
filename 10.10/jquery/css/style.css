@@ -1,0 +1,44 @@
+section {
+    width: 600px;
+    margin: 0 auto;
+}
+h2.item {
+    background: coral;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+h2.item:after {
+    content: "+";
+    display: inline-block;
+    margin-left: 10px;
+}
+h2.active:after {
+    content: "-";
+    display: inline-block;
+    margin-left: 10px;
+}
+section p {
+    display: none;
+}
+
+
+
+/* .block {
+    display: none;
+} */
+/* .active {
+    display: none;
+}
+.block {
+    display: block;
+    color: red;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -250px;
+    background: yellow;
+} */

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JQuery</title>
+
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="range">
+			<label for="">Grayscale</label>
+			<input type="range" min="0" max="100" value="0" id="slide1">
+			<label for="">Sepia</label>
+			<input type="range" min="0" max="100" value="0" id="slide2">
+			<label for="">Blur</label>
+			<input type="range" min="0" max="100" value="0" id="slide3">
+			<label for="">Invert</label>
+			<input type="range" min="0" max="100" value="0" id="slide4">
+			<label for="">Opacity</label>
+			<input type="range" min="0" max="100" value="100" id="slide5">
+			<label for="">Brightness</label>
+			<input type="range" min="0" max="200" value="100" id="slide6">
+			<label for="">Contrast</label>
+			<input type="range" min="0" max="200" value="100" id="slide7">
+			<label for="">Saturate</label>
+			<input type="range" min="0" max="200" value="100" id="slide8">
+		</div>
+		
+		<div class="img">
+			<img id="img" src="https://img.freepik.com/free-photo/lavender-field-at-sunset-near-valensole_268835-3910.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1697068800&semt=sph" alt="">
+			<p id="box"> 
+				Filter:Grayscale(17%) Sepia(0%) Blur(0px) Invert(18%) Opacity(100%) Brightness(100%) Contrast(100%) Saturate(100%)
+			</p>
+		</div>
+	</div>
+	
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
