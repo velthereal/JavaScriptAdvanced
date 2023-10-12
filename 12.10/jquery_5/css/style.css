@@ -1,0 +1,20 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #3b3434;
+}
+.content {
+	padding: 30px;
+	width: 600px;
+	margin: 0 auto;
+}
+.content .slider div{
+	background-color: #e7a3a3;
+	font-size: 36px;
+	line-height: 100px;
+	text-align: center;
+	padding: 30px;
+}
