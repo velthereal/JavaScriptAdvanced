@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rest Spread</title>
+</head>
+<body>
+	<form>
+		<label for="">Title :: </label>
+		<input type="text" name="title">
+		<br>
+		<label for="">text</label>
+		<textarea name="text" id="" cols="30" rows="10"></textarea>
+		<br>
+		<label for="">description</label>
+		<input type="text" name="description">
+		<br>
+		<button>Send</button>
+	</form>
+
+	<script>
+		// let form = document.querySelector('form');
+		// form.addEventListener('submit', function(event){
+		// 	event.preventDefault();
+		// 	let title = form.title.value;
+		// 	let text = form.text.value;
+		// 	let description = form.description.value;
+		// 	saveForm({title,text,description});
+		// })
+		// function saveForm(data){
+		// 	let formData = {
+		// 		date: new Date().toLocaleDateString(),
+		// 		title: data.title,
+		// 		text:data.text,
+		// 		description:data.description
+		// 	}
+		// 	console.log('FormData :: ', formData);
+		// }
+		// function saveForm(data){
+		// 	let {title, text,description} = data;
+		// 	let formData = {
+		// 		date: new Date().toLocaleDateString(),
+		// 		title, text, description
+		// 	}
+		// 	console.log('FormData :: ', formData);
+		// }
+		// function saveForm(data){
+		// 	let {title, text,description} = data;
+		// 	let formData = {
+		// 		date: new Date().toLocaleDateString(),
+		// 		...data // spread розгортає об'єкт
+		// 	}
+		// 	console.log('FormData :: ', formData);
+		// }
+
+		// rest збирає всі параметри у масив
+		let form = document.querySelector('form');
+		form.addEventListener('submit', function(event){
+			event.preventDefault();
+			let title = form.title.value;
+			let text = form.text.value;
+			let description = form.description.value;
+			saveForm(title,text,description);
+		})
+		// function saveForm(title,text,description){
+		// 	let formData = {
+		// 		date: new Date().toLocaleDateString(),
+		// 		title, text, description
+		// 	}
+		// 	console.log('FormData :: ', formData);
+		// }
+		function saveForm(...args){
+			let [title,text,description] = args;
+			let formData = {
+				date: new Date().toLocaleDateString(),
+				title, text, description
+			}
+			console.log('FormData :: ', formData);
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul {
+	list-style-type: none;
+	display: flex;
+	background-color: tomato;	
+	padding: 20px;
+}
+ul li {
+	flex-grow: 1;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: sans-serif;
+}
